@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarBrand</title>
+    <link rel="shortcut icon" href="images/logo1.png">
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+    <!--style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+      
+
+
+
+    </style>
+    
+</head>
+<body>
+    <!--navbar start-->
+    <header class="header">
+        <a href="index.html" class="logo"><img src="Home images/Artistry (3).png" alt="logo" height="240" width="240"></a>
+        <nav class="navbar">
+            <a href="index.html"><b>HOME</b></a>
+            <a href="shop.html"><b>SERVICES</b></a>
+            <a href="about.html"><b>ABOUT</b></a>
+            <a href="blog.html"><b>BLOG</b></a>
+            <a href="review.html"><b>REVIEW</b></a>
+            <a href="contact.html"><b>CONTACT</b></a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart1.png" alt="cart">
+                <div class="content">
+                    <h3>Sweet Basil</h3>
+                    <span class="price">$5.49/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart2.png" alt="cart">
+                <div class="content">
+                    <h3>Thai Sweet Chilli Sauce</h3>
+                    <span class="price">$2.49/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="images/cart3.png" alt="cart">
+                <div class="content">
+                    <h3>Aleppo Peppers</h3>
+                    <span class="price">$8.49/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total">total : $19.69/-</div>
+            <a href="#" class="btn">CheckOut</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+      <!-- header ends -->
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2 style="font-size: 5rem; color: rgb(221, 215, 215);">contact us</h2>
+            <p><a href="index.html"  style="color: #6C9D57;" >Home>> </a>contact </p>
+        </div>
+    </section>
+
+    <section class="contactt">
+
+        <div class="icons-containerr">
+            <div class="iconss">
+                <i class="fas fa-phone"></i>
+                <h3 style="color: black;">our number</h3>
+                <p style="color: black;">+111-222-3333</p>
+                <p style="color: black;">+111-222-3333</p>      
+            </div>
+
+            <div class="iconss">
+                <i class="fas fa-envelope"></i>
+                <h3 style="color: black;">our email</h3>
+                <p style="color: black;">StarBrand@gmail.com</p>
+                <p style="color: black;">StarBrand12@gmail.com</p>
+            </div>
+
+            <div class="iconss">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 style="color: black;">our address</h3>
+                <p style="color: black;">karachi, pakistan</p>
+            </div>
+        </div>
+    </section>
+    <!-- ///contact form anbd location // -->
+      <!-- form -->
+  <div class="container mt-5 bg-secondary">
+    <div class="row">
+      <h1 class=" text-center" style="font-size: 5rem; color: rgb(248, 224, 224);">Contact Form</h1>
+      <form action="">
+        <div>
+          <label for="nm" style="color: rgb(248, 248, 240); font-size: 3rem;">Name</label>
+          <input type="text" class="form-control" id="nm">
+          <label for="" id="nameerror"></label>
+  
+      </div>
+      <div>
+        <label for="em" style="color: rgb(236, 233, 233); font-size: 3rem;">Email</label>
+        <input type="text" class="form-control" id="em" ">
+        <label for="" id="emailerror"></label>
+  
+    </div>
+    <div>
+      <label for="mess" style="color: rgb(250, 242, 242); font-size: 3rem;">Message</label>
+      <textarea name="" id="mess" cols="30" rows="10" class="form-control"></textarea>
+      <label for="" id="textareaerror"></label>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto mb-5">
+    <input onclick=" validate()" type="button" value="Submit" class=" btn btn-lg" style="color: rgb(22, 22, 22); font-size: 2rem; background-color: #f7b4db;">
+  </div>
+      </form>
+    </div>
+   </div>
+         <script>
+          function validate(){
+          var name = document.getElementById("nm").value;
+          var email = document.getElementById("em").value;
+          var textarea = document.getElementById("mess").value;
+  
+          var namePattern = /^[A-Za-z ]{3,12}$/;
+          var emailPattern = /^[a-zA-Z_.]{3,}[0,9]{0,9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,6}$/;
+  if(namePattern.test(name)){
+    document.getElementById("nameerror").innerHTML = "";
+  }else{
+    document.getElementById("nameerror").innerHTML = "Name is invalid";
+    document.getElementById("nameerror").style.color= "red";
+  
+  }
+  if(emailPattern.test(email)){
+    document.getElementById("emailerror").innerHTML = "";
+  }else{
+    document.getElementById("emailerror").innerHTML = "Email is invalid";
+    document.getElementById("emailerror").style.color= "red";
+  
+  }
+  if(textarea != 0){
+    document.getElementById("textareaerror").innerHTML = "";
+  
+  }else if(textarea==0){
+    document.getElementById("textareaerror").innerHTML = "Write Your Message";
+    document.getElementById("textareaerror").style.color= "red";
+  
+  }if(namePattern.test(name) != 0 && emailPattern.test(email) && textarea !=0){
+  document.getElementById("nm").value="";
+  document.getElementById("em").value="";
+  document.getElementById("mess").value="";
+          }
+        }  
+        // function validate() {
+        //       var userInput = alert("Thank You for Submitting");
+              
+        //   }
+  
+    
+        
+  
+  
+         </script> 
+  
+         
+       
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col " style="width: 100%;">
+        <h1 class="text-center mt-3" style="text-align: center; font-size: 3rem;"><b>Live Location</b></h1>
+        <div class="map-container">
+          <iframe  style="width: 100%; "src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28945.64212896037!2d67.01593943078211!3d24.92507630703884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAPTECH!5e0!3m2!1sen!2s!4v1709101969925!5m2!1sen!2s" width="" height="450" style="border:0;" allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          <div id="map"></div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+
+   
+    <!--footer start-->
+
+    <section class="footer mt-4">
+        <div class="box-container">
+            <div class="box">
+                <a href="index.html" class="logo"><img src="Home images/Artistry (3).png" alt="logo" height="280" width="280"></a>
+                <div class="share">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +123-9245890</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> ARTISTRY@gmail.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> karachi, pakistan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> shop</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blog</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>Install App</h3>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="images/ip1.png" alt="">
+                    <img src="images/ip2.png" alt="">
+                </div>
+                <p>Secured Payment Gateways</h3>
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+        <div class="credit">
+            created by <span>ARTISTRY</span> | all rights reserved
+        </div>
+    </section>
+
+    <!--footer end-->
+    
+
+
+
+    <!--js-->
+    <script src="js/script.js"></script>
+</body>
+</html>
